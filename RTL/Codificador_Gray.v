@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Gray_To_Binary #(
+module Gray_a_Binario #(
         parameter N = 4)(
         input [N-1:0] gray, //input gray
         output [N-1:0] bin //output binario
@@ -39,7 +39,12 @@ module Gray_To_Binary #(
  
 endmodule
 
-/////////////// 
+/////////////// Binario A decimal
+module Bin_a_Decimal (
+        input [3:0]bin;
+        input[1:0]decimal;
+);
+        //////Añadir Conversión!!!
 
 /////////////BCD A Siete Segmnetos en Base a FPGA Basys3 
 
