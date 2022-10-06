@@ -39,10 +39,18 @@ module Gray_a_Binario #(
  
 endmodule
 
+
+///////////////Despliegue en Binario en los LED
+
+module Despliegue_led (
+        input [3:0]bin;
+        output[3:0]leds;
+);
+
 /////////////// Binario A decimal
 module Bin_a_Decimal (
         input [3:0]bin;
-        input[1:0]decimal;
+        output[1:0]decimal;
 );
         //////Añadir Conversión!!!
 
