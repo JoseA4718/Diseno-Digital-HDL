@@ -1,0 +1,43 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+Command: synth_design -top Main -part xa7a50tcsg324-1I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a50t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a50t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22384 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 409.449 ; gain = 97.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Main.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Deco' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Deco.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Deco' (1#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Deco.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Register.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Register' (2#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Register.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Display_0' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Display_0.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Display_0' (3#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Display_0.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Display_1' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Display_1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Display_1' (4#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Display_1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Refresh_1' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Cont' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_Counter1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Cont' (5#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_Counter1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Refresh_FlipFlops' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_FlipFlops.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Refresh_FlipFlops' (6#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_FlipFlops.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Refresh_1' (7#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'MUX2a1' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/MUX.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2a1' (8#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/MUX.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Refresh_500' [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_500.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Refresh_500' (9#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Refresh_500.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Main' (10#1) [C:/Users/Jose/Desktop/II_Proyecto_Diseño_Logico/Diseno-Digital-HDL/Main.sv:3]
+WARNING: [Synth 8-3917] design Main has port an3 driven by constant 1
+WARNING: [Synth 8-3917] design Main has port an4 driven by constant 1
+TclStackFree: incorrect freePtr. Call out of sequence?
