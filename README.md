@@ -62,9 +62,22 @@ Este subsistema tiene como entrada al número binario previamente mostrado en la
 
 # Consumo de recursos en la FPGA
 
+Sobre la implementación del proyecto de Vivado se obtuvo el reporte de recursos utilizados. Como se puede observar, se utilizaron 50 look up tables distribuidas a lo largo de los subsistemas del circuito. Además, se utilizaron 51 registros y 25 pares de flipflops. 
+
+![](https://media.discordapp.net/attachments/1022689209041031262/1030229485292892161/utilizacion.png)
+
 # Consumo de potencia
 
+Posteriormente, se ejecutó un reporte de potencia, Vivado utiliza la implementación del código y el modelo en este caso una Basys3 y calcula la potencia necesitada y usada para ejecutar la secuencia. Para este proyecto, se obtuvo que el consumo es de 73mW totales, con los siguientes márgenes de temperatura: 
+
+![](https://media.discordapp.net/attachments/1022689209041031262/1030229484424659084/potencia.png)
+
 # Velocidades máximas de reloj
+
+Para el reporte de timings, se obtuvo que el Worst Negative Slack el cual dió 6.042ns, por lo tanto, la frecuencia máxima del sistema es 1/(10-6.042)ns, lo cual es 252.65MHz.
+
+![](https://media.discordapp.net/attachments/1022689209041031262/1030229484898615440/timings.png)
+
 
 # Problemas hallados durante el trabajo y de las soluciones aplicadas.
 
