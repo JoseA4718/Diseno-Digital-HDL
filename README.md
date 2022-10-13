@@ -58,7 +58,13 @@ Este subsistema tiene como entradas a los switches analógicos, los cuales si es
 
 Este subsistema tiene como entrada al número binario previamente mostrado en las luces LEDs, para esto el mismo numero binario pasa por dos decodificadores, uno tomará su valor de unidades y el otro el valor de decenas. Para esto, se utilizan los flipflops, donde, en caso de que solo tenga unidades el flipflop que controla las decenas enviará un 0 al ánodo provocando que no encienda el LED de 7 segmentos, caso contrario si lo encendería. Luego, para los cátodos, al pasar por el decodificador de 7 segmentos para cada display, este pasa por un MUX de control, el cual recibe la variable "sel" de los flipflops, con la cual en caso de ser 0, no prende los cátodos, en caso de ser 1 enciende los cátodos necesarios para mostrar el número que se desea. Todo este proceso es controlado por un contador que actúa como reloj. 
 
-# Simulación
+# Simulación (Ejecución)
+
+Para ejecutar el funcionamiento del código, se creó el módulo Top.sv, el cual contiene todas las asignaciones e instanciaciones de los otros módulos necesarias para el funcionamiento total. Este valor se selecciona en Vivado y se le da a "Run Implementation", una vez ejecutado, se crea el bitstream necesario y se procede a programar la tarjeta Basys 3, mediante conexión USB. 
+
+Una vez cargado el código en la Basys 3, se procede a ingresar el código Gray de 4 bits utilizando los switches analógicos de la tarjeta. Donde si el switch está hacia arriba representa un 1 y si está hacia abajo representa un 0. Dependiendo de el valor introducido en Gray, este se decodifica y se convierte a binario. Una vez decodificado este se muestra en los leds de la Basys3, donde el led encendido representa un 1 o "alto" y un led apagado representa un 0 o "bajo". Por ultimo ese valor binario se traduce a BCD el cual luego se decodifica a los cátodos de 7 segmentos. Una vez decodificado se convierte a decimal a partir del BCD y se muestra en las LEDs de 7 segmentos. 
+
+Para demostrar el funcionamiento se presenta el siguiente caso, donde se insertó en código Gray el valor "1010" el cual corresponde a 12 en código Gray. Se puede ver como las luces que se encienden son solo las primeras dos, de manera que representa un "1101", el cual sería el valor en binario. Por último, en el display de 7 segmentos se muestra el valor "12" el cual es correcto con respecto a la entrada. 
 
 # Consumo de recursos en la FPGA
 
