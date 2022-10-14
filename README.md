@@ -66,6 +66,9 @@ Una vez cargado el código en la Basys 3, se procede a ingresar el código Gray 
 
 Para demostrar el funcionamiento se presenta el siguiente caso, donde se insertó en código Gray el valor "1010" el cual corresponde a 12 en código Gray. Se puede ver como las luces que se encienden son solo las primeras dos, de manera que representa un "1101", el cual sería el valor en binario. Por último, en el display de 7 segmentos se muestra el valor "12" el cual es correcto con respecto a la entrada. 
 
+![](https://media.discordapp.net/attachments/329398607021342721/1030341974894587954/IMG_20221013_090625.jpg?width=901&height=676)
+
+
 # Consumo de recursos en la FPGA
 
 Sobre la implementación del proyecto de Vivado se obtuvo el reporte de recursos utilizados. Como se puede observar, se utilizaron 50 look up tables distribuidas a lo largo de los subsistemas del circuito. Además, se utilizaron 51 registros y 25 pares de flipflops. 
